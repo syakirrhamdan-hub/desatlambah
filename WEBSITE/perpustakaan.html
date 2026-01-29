@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Desa - Balai Desa Tlambah</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css?v=1.1">
+    <!-- Language Logic -->
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
+</head>
+
+<body class="decorative-bg">
+
+
+    <!-- Running Text (Fixed Top) -->
+    <div class="running-text-container">
+        <div class="running-text-label">INFO DESA</div>
+        <div class="running-text">Selamat Datang di Desa Tlambah Kecamatan Karang Penang Kabupaten Sampang</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <!-- Navbar Brand with Slogan -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo_desatlambah.png" height="50" class="me-2 d-inline-block">
+                <div class="d-flex flex-column text-start">
+                    <span style="font-size: 1.25rem; line-height: 1;">Desa Tlambah</span>
+                    <span class="fst-italic fw-normal text-white-50"
+                        style="font-size: 0.65rem; letter-spacing: 0.5px;">Bersatu dalam Tradisi, Maju dengan
+                        Prestasi</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil.html" data-i18n="nav_profil">Profil Desa</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="perpustakaan.html"
+                            data-i18n="nav_library">Perpustakaan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="potensi.html" data-i18n="nav_potency">Potensi
+                            Desa</a></li>
+                </ul>
+                <!-- Language Switcher -->
+                <!-- Language Switcher Removed -->
+
+                <a href="index.html#info-balai-desa" class="btn btn-primary ms-3 rounded-pill px-4"
+                    data-i18n="nav_contact" id="btn-contact">Hubungi Kami</a>
+
+                <!-- Dark Mode Toggle Removed -->
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header -->
+    <header class="bg-primary text-white text-center py-5 mt-5"
+        style="background: linear-gradient(rgba(121, 158, 198, 0.9), rgba(121, 158, 198, 0.9)), url('assets/images/cover-perpustakaan.jpg') center/cover;">
+        <div class="container py-4">
+            <h1 class="fw-bold display-5" data-i18n="lib_header_title">"Jendela Desa"</h1>
+            <p class="lead mb-0" data-i18n="lib_header_subtitle">Pusat Literasi, Edukasi, dan Pemberdayaan Masyarakat
+                Desa Tlambah</p>
+            <div class="mt-4">
+                <span class="badge bg-warning text-fixed fs-6 px-4 py-2 rounded-pill shadow-sm">
+                    <i class="bi bi-clock-fill me-2"></i><span data-i18n="lib_hours">Jam Operasional: Senin - Sabtu
+                        (08:30 - 14:00)</span>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Visi Misi Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="card bg-primary text-white border-0 shadow-lg p-4 rounded-4 position-relative overflow-hidden"
+                        style="background: var(--primary-color) !important;">
+                        <div class="position-absolute top-0 end-0 p-3 opacity-25">
+                            <i class="bi bi-book-half display-1"></i>
+                        </div>
+                        <h3 class="fw-bold mb-3"><i class="bi bi-eye me-2"></i><span
+                                data-i18n="lib_vision_title">Visi</span></h3>
+                        <p class="lead mb-0" data-i18n="lib_vision_content">Menjadikan perpustakaan desa "Jendela Desa"
+                            sebagai pusat literasi,
+                            edukasi, dan pemberdayaan masyarakat untuk menciptakan masyarakat yang cerdas, berdaya
+                            saing, dan berbudaya baca.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="ps-lg-4">
+                        <h3 class="fw-bold mb-4 text-primary"><i class="bi bi-list-task me-2"></i><span
+                                data-i18n="lib_mission_title">Misi</span></h3>
+                        <div class="d-flex mb-3">
+                            <div class="flex-shrink-0 text-primary fw-bold me-3">01</div>
+                            <div>
+                                <h5 class="fw-bold mb-1" data-i18n="lib_mission_1_title">Meningkatkan Minat Baca</h5>
+                                <p class="text-muted small" data-i18n="lib_mission_1_desc">Menyediakan bahan bacaan
+                                    berkualitas dan sesuai dengan
+                                    kebutuhan masyarakat untuk menumbuhkan budaya literasi.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="flex-shrink-0 text-primary fw-bold me-3">02</div>
+                            <div>
+                                <h5 class="fw-bold mb-1" data-i18n="lib_mission_2_title">Memfasilitasi Akses Informasi
+                                </h5>
+                                <p class="text-muted small" data-i18n="lib_mission_2_desc">Menyediakan layanan
+                                    perpustakaan yang mudah diakses oleh
+                                    seluruh lapisan masyarakat, baik dalam bentuk fisik maupun digital.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="flex-shrink-0 text-primary fw-bold me-3">03</div>
+                            <div>
+                                <h5 class="fw-bold mb-1" data-i18n="lib_mission_3_title">Mendukung Kegiatan &
+                                    Kreativitas</h5>
+                                <p class="text-muted small" data-i18n="lib_mission_3_desc">Mengadakan program edukasi,
+                                    pelatihan keterampilan, dan
+                                    kegiatan literasi yang mendukung peningkatan wawasan dan kreativitas.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="flex-shrink-0 text-primary fw-bold me-3">04</div>
+                            <div>
+                                <h5 class="fw-bold mb-1" data-i18n="lib_mission_4_title">Wadah Pemberdayaan Masyarakat
+                                </h5>
+                                <p class="text-muted small" data-i18n="lib_mission_4_desc">Menyelenggarakan kegiatan
+                                    yang dapat meningkatkan
+                                    keterampilan dan kesejahteraan masyarakat desa.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="flex-shrink-0 text-primary fw-bold me-3">05</div>
+                            <div>
+                                <h5 class="fw-bold mb-1" data-i18n="lib_mission_5_title">Membangun Kemitraan</h5>
+                                <p class="text-muted small" data-i18n="lib_mission_5_desc">Bekerja sama dengan berbagai
+                                    pihak, termasuk sekolah,
+                                    pemerintah, dan komunitas literasi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Struktur Organisasi Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-primary fw-bold text-uppercase">Pengurus</h6>
+                <h2 class="fw-bold">Struktur Organisasi</h2>
+                <div class="divider mx-auto mt-3"></div>
+            </div>
+
+            <!-- Tree-like Layout with Cards -->
+            <div class="row justify-content-center g-4">
+
+                <!-- Ketua -->
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="card border-0 shadow-sm h-100 py-4 hover-up">
+                        <div class="mb-3">
+                            <img src="https://ui-avatars.com/api/?name=Achmad+V&background=0d6efd&color=fff"
+                                class="rounded-circle shadow-sm" width="80" height="80">
+                        </div>
+                        <h5 class="fw-bold text-primary mb-1">Achmad Vicky Faisal, S.Kom</h5>
+                        <span class="badge bg-primary rounded-pill mb-2">Ketua</span>
+                    </div>
+                </div>
+
+                <!-- Wakil Ketua -->
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="card border-0 shadow-sm h-100 py-4 hover-up">
+                        <div class="mb-3">
+                            <img src="https://ui-avatars.com/api/?name=Abd+K&background=6c757d&color=fff"
+                                class="rounded-circle shadow-sm" width="80" height="80">
+                        </div>
+                        <h5 class="fw-bold text-secondary mb-1">Abd. Kholik Alimullah, S.Pd</h5>
+                        <span class="badge bg-secondary rounded-pill mb-2">Wakil Ketua</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center g-4 mt-2">
+                <!-- Sekretaris -->
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="card border-0 shadow-sm h-100 py-4 hover-up">
+                        <div class="mb-3">
+                            <img src="https://ui-avatars.com/api/?name=Muh+J&background=198754&color=fff"
+                                class="rounded-circle shadow-sm" width="80" height="80">
+                        </div>
+                        <h5 class="fw-bold text-success mb-1">Muhammad Juhri, M.Pd</h5>
+                        <span class="badge bg-success rounded-pill mb-2">Sekretaris</span>
+                    </div>
+                </div>
+
+                <!-- Bendahara -->
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="card border-0 shadow-sm h-100 py-4 hover-up">
+                        <div class="mb-3">
+                            <img src="https://ui-avatars.com/api/?name=Abd+H&background=ffc107&color=000"
+                                class="rounded-circle shadow-sm" width="80" height="80">
+                        </div>
+                        <h5 class="fw-bold mb-1">Abd. Hamid, M.Pd</h5>
+                        <span class="badge bg-warning text-fixed rounded-pill mb-2">Bendahara</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center g-4 mt-2">
+                <!-- Bidang Pelayanan -->
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="card border-0 shadow-sm h-100 py-4 hover-up">
+                        <h6 class="fw-bold text-muted mb-2">Bidang Pelayanan</h6>
+                        <h5 class="fw-bold mb-0">Moh. Da'i, S.Mat</h5>
+                    </div>
+                </div>
+                <!-- Bidang Pengelolaan -->
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="card border-0 shadow-sm h-100 py-4 hover-up">
+                        <h6 class="fw-bold text-muted mb-2">Bidang Pengelolaan</h6>
+                        <h5 class="fw-bold mb-0">Baida'i Firdaus</h5>
+                    </div>
+                </div>
+                <!-- Bidang Pengadaan -->
+                <div class="col-md-3 col-sm-6 text-center">
+                    <div class="card border-0 shadow-sm h-100 py-4 hover-up">
+                        <h6 class="fw-bold text-muted mb-2">Bidang Pengadaan</h6>
+                        <h5 class="fw-bold mb-0">Abd. Muhgni</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Dokumentasi Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-primary fw-bold text-uppercase" data-i18n="lib_gallery_title">Galeri</h6>
+                <div class="divider mx-auto mt-3"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 hover-up">
+                        <img src="assets/images/perpus-dok-1.jpg" class="img-fluid w-100 h-100"
+                            style="object-fit: cover; min-height: 250px;" alt="Dokumentasi 1">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 hover-up">
+                        <img src="assets/images/perpus-dok-2.jpg" class="img-fluid w-100 h-100"
+                            style="object-fit: cover; min-height: 250px;" alt="Dokumentasi 2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 hover-up">
+                        <img src="assets/images/perpus-dok-4.jpg" class="img-fluid w-100 h-100"
+                            style="object-fit: cover; min-height: 250px;" alt="Dokumentasi 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0" data-i18n="copyright_text">&copy; 2026 Pemerintah Desa Tlambah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Language Switcher -->
+    <div class="dropup" id="floating-lang-container">
+        <button class="btn dropdown-toggle" type="button" id="floating-lang-btn" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-translate"></i>
+        </button>
+        <ul class="dropdown-menu lang-dropdown-menu shadow-lg" aria-labelledby="floating-lang-btn">
+            <li><a class="dropdown-item lang-option" href="#" data-lang="id">🇮🇩 Indonesia</a></li>
+            <li><a class="dropdown-item lang-option" href="#" data-lang="mad">🏁 Madura</a></li>
+            <li><a class="dropdown-item lang-option" href="#" data-lang="en">🇬🇧 English</a></li>
+        </ul>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

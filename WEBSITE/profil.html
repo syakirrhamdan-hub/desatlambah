@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Desa - Balai Desa Tlambah</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css?v=1.1">
+    <!-- Language Logic -->
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
+</head>
+
+<body class="decorative-bg">
+
+
+    <!-- Running Text (Fixed Top) -->
+    <div class="running-text-container">
+        <div class="running-text-label" data-i18n="run_label">INFO DESA</div>
+        <div class="running-text" data-i18n="run_text">Selamat Datang di Desa Tlambah Kecamatan Karang Penang Kabupaten
+            Sampang</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container hidden">
+            <!-- Navbar Brand with Slogan -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo_desatlambah.png" height="50" class="me-2 d-inline-block">
+                <div class="d-flex flex-column text-start">
+                    <span style="font-size: 1.25rem; line-height: 1;" data-i18n="header_title">Desa Tlambah</span>
+                    <span class="fst-italic fw-normal text-white-50" style="font-size: 0.65rem; letter-spacing: 0.5px;"
+                        data-i18n="header_subtitle">Bersatu dalam Tradisi, Maju dengan
+                        Prestasi</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="profil.html" data-i18n="nav_profil">Profil
+                            Desa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="perpustakaan.html"
+                            data-i18n="nav_library">Perpustakaan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="potensi.html" data-i18n="nav_potency">Potensi
+                            Desa</a></li>
+                </ul>
+                <!-- Language Switcher Removed -->
+
+                <a href="index.html#info-balai-desa" class="btn btn-primary ms-3 rounded-pill px-4"
+                    data-i18n="nav_contact" id="btn-contact">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="bg-primary text-white text-center py-5 mt-5"
+        style="background: linear-gradient(rgba(121, 158, 198, 0.9), rgba(121, 158, 198, 0.9)), url('assets/images/sobat.jpg') center/cover;">
+        <div class="container">
+
+        </div>
+    </header>
+
+    <!-- Profil Desa Section -->
+    <section id="profil" class="section-padding">
+        <div class="container hidden">
+
+            <!-- Tabs Navigation -->
+            <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active px-4" id="pills-wilayah-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-wilayah" type="button" role="tab" aria-controls="pills-wilayah"
+                        aria-selected="true" data-i18n="tab_wilayah"> Wilayah & Geografis</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-4" id="pills-sosial-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-sosial" type="button" role="tab" aria-controls="pills-sosial"
+                        aria-selected="false" data-i18n="tab_sosial">Kependudukan & Sosial</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-4" id="pills-ekonomi-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-ekonomi" type="button" role="tab" aria-controls="pills-ekonomi"
+                        aria-selected="false" data-i18n="tab_ekonomi">Ekonomi</button>
+                </li>
+            </ul>
+
+            <!-- Tabs Content -->
+            <div class="tab-content shadow-sm p-4 rounded-4 bg-light" id="pills-tabContent">
+
+                <!-- Tab Wilayah -->
+                <div class="tab-pane fade show active" id="pills-wilayah" role="tabpanel"
+                    aria-labelledby="pills-wilayah-tab">
+                    <div class="row g-4">
+                        <div class="col-md-6 border-end border-md-0">
+                            <h4 class="fw-bold mb-3 text-primary"><i class="bi bi-map me-2"></i><span
+                                    data-i18n="wilayah_batas_title">Batas Wilayah</span></h4>
+                            <table class="table table-borderless table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td class="fw-bold" data-i18n="batas_utara">Sebelah Utara</td>
+                                        <td data-i18n="batas_utara_val">: Desa Bulmatet</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold" data-i18n="batas_selatan">Sebelah Selatan</td>
+                                        <td data-i18n="batas_selatan_val">: Desa Blu’uran</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold" data-i18n="batas_barat">Sebelah Barat</td>
+                                        <td data-i18n="batas_barat_val">: Desa Gunung Kesan</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold" data-i18n="batas_timur">Sebelah Timur</td>
+                                        <td data-i18n="batas_timur_val">: Desa Tlambah Pamekasan</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h4 class="fw-bold mb-3 mt-4 text-primary"><i class="bi bi-signpost-split me-2"></i><span
+                                    data-i18n="orbitasi_title">Orbitasi</span>
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-geo-alt me-2 text-danger"></i><span
+                                        data-i18n="orbitasi_dist_kec">Jarak ke Ibu Kota Kecamatan</span>: <strong>5,5
+                                        KM</strong> (15 Menit)</li>
+                                <li class="mb-2"><i class="bi bi-building me-2 text-danger"></i><span
+                                        data-i18n="orbitasi_dist_kab">Jarak ke Ibu Kota Kabupaten</span>: <strong>29
+                                        KM</strong> (1 Jam)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="fw-bold mb-3 text-primary"><i class="bi bi-pie-chart me-2"></i><span
+                                    data-i18n="lahan_title">Penggunaan Lahan</span>
+                            </h4>
+                            <p class="mb-2 fw-bold"><span data-i18n="lahan_total">Total Luas Wilayah</span>: <span
+                                    class="text-primary">14.334.427 ha</span>
+                            </p>
+
+                            <div class="table-responsive">
+                                <table class="table table-sm table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th data-i18n="th_usage">Jenis Penggunaan</th>
+                                            <th class="text-end" data-i18n="th_area">Luas (ha)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-i18n="lahan_settlement">Pemukiman</td>
+                                            <td class="text-end">3.200.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-i18n="lahan_rice">Pertanian Sawah</td>
+                                            <td class="text-end">4.508.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-i18n="lahan_field">Ladang/Tegalan</td>
+                                            <td class="text-end">6.614.210</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-i18n="lahan_building">Bangunan</td>
+                                            <td class="text-end">9.424</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-i18n="lahan_road">Jalan</td>
+                                            <td class="text-end">2.700</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-i18n="lahan_school">Sekolah</td>
+                                            <td class="text-end">82</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-i18n="lahan_office">Perkantoran</td>
+                                            <td class="text-end">4</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-i18n="lahan_sport">Lapangan Olah Raga</td>
+                                            <td class="text-end">7</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-i18n="lahan_forest">Hutan & Rawa</td>
+                                            <td class="text-end">-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Sosial -->
+                <div class="tab-pane fade" id="pills-sosial" role="tabpanel" aria-labelledby="pills-sosial-tab">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 bg-white p-3 h-100">
+                                <h5 class="fw-bold text-success mb-3"><i class="bi bi-mortarboard-fill me-2"></i><span
+                                        data-i18n="social_edu_title">Pendidikan</span></h5>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="list-unstyled small">
+                                            <li class="mb-1"><strong>SD/MI:</strong> 2.340 Orang</li>
+                                            <li class="mb-1"><strong>SLTP/MTs:</strong> 688 Orang</li>
+                                            <li class="mb-1"><strong>SLTA/MA:</strong> 1.442 Orang</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="list-unstyled small">
+                                            <li class="mb-1"><strong>S1/Diploma:</strong> 761 Orang</li>
+                                            <li class="mb-1"><strong>S2:</strong> 198 Orang</li>
+                                            <li class="text-danger"><strong>Putus Sekolah:</strong> 2.822 Orang</li>
+                                            <li class="text-danger"><strong>Buta Huruf:</strong> 1.180 Orang</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <h6 class="fw-bold small">Fasilitas Pendidikan:</h6>
+                                <p class="small mb-0">Total 54 Buah (TK/PAUD: 23, SD/MI: 26, SLTP/MTs: 11, SLTA/MA: 10,
+                                    Lainnya: 12)</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card border-0 bg-white p-3 h-100">
+                                <h5 class="fw-bold text-danger mb-3"><i class="bi bi-heart-pulse-fill me-2"></i><span
+                                        data-i18n="social_health_title">Kesehatan & Gizi</span></h5>
+                                <div class="row small">
+                                    <div class="col-12 mb-2">
+                                        <strong>Kelahiran & Kematian:</strong><br>
+                                        Bayi Lahir: 163 | Meninggal: 21<br>
+                                        Ibu Melahirkan: 162 | Meninggal: 0
+                                    </div>
+                                    <div class="col-12 mb-2">
+                                        <strong>Gizi Balita (Total 467):</strong><br>
+                                        <span class="text-success">Baik: 467</span> | <span class="text-warning">Kurang:
+                                            21</span> | <span class="text-danger">Buruk: 14</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <strong>Imunisasi:</strong> Polio 3 (105), DPT-1 (95), Cacar (35)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card border-0 bg-white p-3 h-100">
+                                <h5 class="fw-bold text-info mb-3"><i class="bi bi-droplet-fill me-2"></i><span
+                                        data-i18n="social_water_title">Air Bersih</span>
+                                </h5>
+                                <ul class="list-group list-group-flush small">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">Sumur
+                                        Galian <span class="badge bg-primary rounded-pill">1.222 KK</span></li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">Sumur
+                                        Hidran Umum <span class="badge bg-primary rounded-pill">1.777 KK</span></li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">Sumur
+                                        Pompa <span class="badge bg-primary rounded-pill">591 KK</span></li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">Air
+                                        PAH <span class="badge bg-primary rounded-pill">460 KK</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card border-0 bg-white p-3 h-100">
+                                <h5 class="fw-bold text-warning mb-3"><i class="bi bi-star-fill me-2"></i><span
+                                        data-i18n="social_religion_title">Agama</span></h5>
+                                <p class="mb-2" data-i18n="religion_desc">Mayoritas penduduk beragama <strong>Islam
+                                        (15.946 Jiwa)</strong>.</p>
+                                <strong data-i18n="religion_places">Tempat Ibadah:</strong>
+                                <ul class="list-unstyled small mt-1">
+                                    <li><i class="bi bi-house-door me-2"></i>Masjid: 23 Buah</li>
+                                    <li><i class="bi bi-house-door me-2"></i>Musholla: 84 Buah</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Ekonomi -->
+                <div class="tab-pane fade" id="pills-ekonomi" role="tabpanel" aria-labelledby="pills-ekonomi-tab">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <h4 class="fw-bold mb-4" data-i18n="eco_structure_title">Struktur Mata Pencaharian</h4>
+                            <p data-i18n="eco_structure_desc">Mata pencaharian warga Desa Tlambah didominasi oleh sektor
+                                pertanian, diikuti oleh
+                                jasa/perdagangan dan industri.</p>
+
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body">
+                                    <div class="row text-center mt-3">
+                                        <div class="col-md-3 col-6 mb-3">
+                                            <h3 class="fw-bold text-success">6.820</h3>
+                                            <small class="text-uppercase text-muted fw-bold"
+                                                data-i18n="eco_agri">Pertanian</small>
+                                        </div>
+                                        <div class="col-md-3 col-6 mb-3">
+                                            <h3 class="fw-bold text-warning">2.435</h3>
+                                            <small class="text-uppercase text-muted fw-bold"
+                                                data-i18n="eco_trade">Perdagangan/Jasa</small>
+                                        </div>
+                                        <div class="col-md-3 col-6 mb-3">
+                                            <h3 class="fw-bold text-secondary">1.100</h3>
+                                            <small class="text-uppercase text-muted fw-bold"
+                                                data-i18n="eco_industry">Industri/Tukang</small>
+                                        </div>
+                                        <div class="col-md-3 col-6 mb-3">
+                                            <h3 class="fw-bold text-primary">430</h3>
+                                            <small class="text-uppercase text-muted fw-bold"
+                                                data-i18n="eco_other">Sektor Lain</small>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 p-3 bg-light rounded">
+                                        <h5 class="fw-bold mb-0"><span data-i18n="eco_labor_total">Total Angkatan Kerja:
+                                                10.785 Orang</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Potensi -->
+                <div class="tab-pane fade" id="pills-potensi" role="tabpanel" aria-labelledby="pills-potensi-tab">
+                    <div class="row g-4">
+                        <!-- Potensi 1: Genteng -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="potensi-card rounded-4 overflow-hidden shadow-sm position-relative group">
+                                <div class="potensi-img-wrapper overflow-hidden">
+                                    <img src="assets/images/potensi-genteng.png" class="img-fluid w-100"
+                                        alt="Industri Genteng"
+                                        style="height: 250px; object-fit: cover; transition: transform 0.5s ease;">
+                                </div>
+                                <div class="potensi-overlay position-absolute bottom-0 start-0 w-100 p-4 text-white">
+                                    <div class="potensi-content">
+                                        <h5 class="fw-bold mb-2">Industri Genteng</h5>
+                                        <p class="small mb-0 opacity-75">Produksi genteng berkualitas tinggi yang
+                                            menjadi andalan ekonomi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Potensi 2: Gerabah -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="potensi-card rounded-4 overflow-hidden shadow-sm position-relative group">
+                                <div class="potensi-img-wrapper overflow-hidden">
+                                    <img src="assets/images/potensi-gerabah.png" class="img-fluid w-100"
+                                        alt="Kerajinan Gerabah"
+                                        style="height: 250px; object-fit: cover; transition: transform 0.5s ease;">
+                                </div>
+                                <div class="potensi-overlay position-absolute bottom-0 start-0 w-100 p-4 text-white">
+                                    <div class="potensi-content">
+                                        <h5 class="fw-bold mb-2">Kerajinan Gerabah</h5>
+                                        <p class="small mb-0 opacity-75">Warisan leluhur kerajinan tanah liat yang
+                                            estetik.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Potensi 3: Pertanian -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="potensi-card rounded-4 overflow-hidden shadow-sm position-relative group">
+                                <div class="potensi-img-wrapper overflow-hidden">
+                                    <img src="assets/images/potensi-pertanian.png" class="img-fluid w-100"
+                                        alt="Pertanian & Hasil Bumi"
+                                        style="height: 250px; object-fit: cover; transition: transform 0.5s ease;">
+                                </div>
+                                <div class="potensi-overlay position-absolute bottom-0 start-0 w-100 p-4 text-white">
+                                    <div class="potensi-content">
+                                        <h5 class="fw-bold mb-2">Pertanian & Hasil Bumi</h5>
+                                        <p class="small mb-0 opacity-75">Lahan subur padi dan palawija menopang pangan
+                                            desa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0" data-i18n="copyright_text">&copy; 2026 Pemerintah Desa Tlambah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Language Switcher -->
+    <div class="dropup" id="floating-lang-container">
+        <button class="btn dropdown-toggle" type="button" id="floating-lang-btn" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-translate"></i>
+        </button>
+        <ul class="dropdown-menu lang-dropdown-menu shadow-lg" aria-labelledby="floating-lang-btn">
+            <li><a class="dropdown-item lang-option" href="#" data-lang="id">🇮🇩 Indonesia</a></li>
+            <li><a class="dropdown-item lang-option" href="#" data-lang="mad">🏁 Madura</a></li>
+            <li><a class="dropdown-item lang-option" href="#" data-lang="en">🇬🇧 English</a></li>
+        </ul>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
